@@ -1,0 +1,31 @@
+/* Resert de configuraçoes pra navegadores em gerais */
+* {
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+} 
+
+body{
+    background-color: rgb(53, 131, 131);
+    background-image:url("assets/image-cache.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;    
+}
+
+h1{
+    text-align: center;
+    color: blue;
+    font-size: 50px; 
+    margin: 20px;
+
+}
+p{
+    text-align: justify;
+    font-size: 15px;
+    font-family: 'Arial'; 
+    margin:20px;
+
+}
