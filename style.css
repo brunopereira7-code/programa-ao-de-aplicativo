@@ -1,31 +1,52 @@
-/* Resert de configuraçoes pra navegadores em gerais */
-* {
+/* RESET das configuraçoes do NAVEGADOR */ 
 
-    margin:0;
-    padding:0;
+ /* é esse atesteristico */
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+
 } 
 
 body{
-    background-color: rgb(53, 131, 131);
-    background-image:url("assets/image-cache.jpg");
+    background-color: rgb(73, 65, 80);
+                    /* comando url() */
+    background-image: url(assets/pngtree-free-hd-wallpaper-4k-new-background-picture-image_15546678.jpg);
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;    
-}
+    background-attachment: fixed;
+    /* receber a mesma fonte que seja aplicada no corpo da pagina coloca a font family no body */
+    font-family: comic 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-h1{
+}
+h2{
     text-align: center;
-    color: blue;
-    font-size: 50px; 
-    margin: 20px;
-
-}
+    font-size: 50px;
+    font-family: 'Gigi';
+} 
 p{
     text-align: justify;
     font-size: 15px;
-    font-family: 'Arial'; 
-    margin:20px;
+    margin: 20px 20px;
 
+} 
+a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+img{
+    display: block;
+    max-width: 300px;
+    margin: 10px auto;
+}
+button{
+    display: block;
+    margin: 20px auto;
+    /* comand:auto, e dois px numa variavel */
+    cursor: pointer;
+    padding: 5px 30px ; 
+    border-radius: 30px;
 }
