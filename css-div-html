@@ -1,0 +1,72 @@
+/* RESET DO NAVEGADOR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    background-image: url("img-site/red-bull-macro-shot-lz4smav8g0kmozxj.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* --- A MÁGICA DO PAINEL CENTRAL --- */
+.painel-central {
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo preto com 70% de transparência */
+    max-width: 800px; /* Define uma largura máxima para não ficar esticado na tela toda */
+    margin: 50px auto; /* O 'auto' centraliza o painel perfeitamente no meio da tela */
+    padding: 40px; /* Dá um respiro interno (espaço entre as bordas e o texto) */
+    border-radius: 15px; /* Deixa os cantos do painel arredondados */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Dá uma leve sombra para destacar do fundo */
+}
+
+h1 {
+    text-align: center;
+    color: rgb(100, 149, 237); /* Clareei um pouco o azul para dar leitura no fundo escuro */
+    font-size: 40px;
+    margin-bottom: 20px;
+} 
+
+h2 {
+    color: rgb(231, 225, 225);
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    font-size: 16px;
+    color: blanchedalmond;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+    line-height: 1.5; /* Melhora o espaço entre as linhas do texto */
+}
+
+/* Configuração da imagem para ficar centralizada dentro do painel */
+.img-logo {
+    display: block;
+    margin: 0 auto 30px auto; 
+    width: 300px;
+    border-radius: 10px;
+} 
+
+button {
+    display: block;
+    margin: 40px auto 10px auto; /* Centraliza o botão perfeitamente */
+    padding: 10px 40px;
+    border-radius: 7px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(49, 49, 182); /* Fundo azul pro botão */
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(70, 70, 210); /* Efeito ao passar o mouse por cima */
+}
