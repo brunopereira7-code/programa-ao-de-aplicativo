@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-3.css">
+</head>
+<body>
+    <h1>Vendas Red Bull</h1>
+<!-- no lugar do alt <img src="" alt=""> -->
+    <img src="img-site/vendas-mapa.png" class="img-logo">
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis porro inventore temporibus, quia quos sed placeat explicabo possimus voluptate perspiciatis sunt cumque rem incidunt delectus magnam. Nobis quia voluptate est!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil beatae aut ipsum vero ea vel et maxime quidem molestias quam quaerat voluptatum, aliquam porro, possimus eum veritatis ducimus perferendis culpa.
+        Alias incidunt dolore cupiditate voluptas quas nemo dolorum consequuntur voluptatum magni eligendi consequatur, debitis maiores voluptates aspernatur, cum repudiandae perspiciatis saepe velit iusto! Blanditiis suscipit, accusantium sequi odio numquam dicta.
+        Animi voluptates commodi nulla est fugit, architecto hic iure debitis aspernatur excepturi, asperiores vitae libero odit? Aperiam iusto suscipit est cupiditate itaque, sapiente cum eligendi possimus repellendus nulla natus vero.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aspernatur, porro necessitatibus nam, libero soluta est voluptas incidunt omnis tenetur fuga temporibus ipsam magni, unde voluptate cupiditate explicabo possimus sed.
+    </p> 
+
+    <!-- class . id é com # -->
+     
+    <h2 id="title-Estaticas-de-vendas">Estaticas de vendas</h2>
+
+    <p id="texto-estatica">
+        Lorem ipsum dolor sit amet consecrepudiandae inventore, temporibus atque voluptatem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi officiis voluptatibus dolor exercitationem tempora at pariatur beatae cum? Dolor eius, necessitatibus numquam blanditiis vero adipisci! Recusandae eius quibusdam quas repellat.
+    
+    </p>       
+  
+    
+
+    <button onclick="window.location.href='segunda-pagina.html'">
+        Voltar
+
+    </button> 
+
+
+</body>
+</html>
