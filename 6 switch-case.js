@@ -25,7 +25,5 @@ switch (opçao) {
     
     default:
         break;
-    
-
         
 }

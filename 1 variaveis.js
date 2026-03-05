@@ -8,6 +8,7 @@ let altura=1.45
 nome="abel"
 
 // exibir 
+//é o print
 console.log("nome:",nome) 
 console.log("idade",idade)
 console.log("peso",peso)
