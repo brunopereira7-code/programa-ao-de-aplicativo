@@ -6,15 +6,7 @@
     box-sizing: border-box;
 }
 
-/* Reset básico para garantir que fique igual em todos os navegadores */
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-} */
-
-/* Fundo da página com um gradiente moderno e centralização do conteúdo */
+/* ---------------------------------------------------------------------------------------------------------------------- */
 body {
     background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
     min-height: 100vh;
@@ -24,7 +16,7 @@ body {
     padding: 20px;
 }
 
-/* Estilo do cartão principal (container) */
+/* ---------------------------------------------------------------------------------------------------------------------- */
 .container {
     background-color: #ffffff;
     padding: 30px 40px;
@@ -35,14 +27,14 @@ body {
     text-align: center;
 }
 
-/* Título */
+/* ---------------------------------------------------------------------------------------------------------------------- */
 h1 {
     color: #333333;
     font-size: 24px;
     margin-bottom: 25px;
 }
 
-/* Rótulo do input (Label) */
+/* ---------------------------------------------------------------------------------------------------------------------- */
 label {
     display: block;
     text-align: left;
@@ -52,7 +44,7 @@ label {
     font-size: 14px;
 }
 
-/* Campo de digitação (Input) */
+/* ---------------------------------------------------------------------------------------------------------------------- */
 input[type="number"] {
     width: 100%;
     padding: 12px 15px;
@@ -63,14 +55,14 @@ input[type="number"] {
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Efeito ao focar no campo de digitação */
+/* ---------------------------------------------------------------------------------------------------------------------- */
 input[type="number"]:focus {
     outline: none;
     border-color: #74ebd5;
     box-shadow: 0 0 8px rgba(116, 235, 213, 0.4);
 }
 
-/* Botão Gerar Tabuada */
+/* ---------------------------------------------------------------------------------------------------------------------- */
 button {
     width: 100%;
     padding: 12px;
@@ -84,7 +76,7 @@ button {
     transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
-/* Efeito ao passar o mouse e ao clicar no botão */
+/* ---------------------------------------------------------------------------------------------------------------------- */
 button:hover {
     background-color: #476cd9;
 }
@@ -93,7 +85,7 @@ button:active {
     transform: scale(0.98);
 }
 
-/* Área onde o resultado vai aparecer */
+/* ---------------------------------------------------------------------------------------------------------------------- */
 #resultado {
     margin-top: 25px;
     text-align: left;
@@ -104,6 +96,6 @@ button:active {
     font-size: 16px;
     line-height: 1.6;
     border: 1px solid #eeeeee;
-    /* Deixamos invisível se estiver vazio, o seu JS pode cuidar disso */
+    
     min-height: 50px; 
 }
