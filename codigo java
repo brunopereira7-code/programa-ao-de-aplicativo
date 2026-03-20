@@ -1,0 +1,66 @@
+// =====================================================================
+// 1. RESPONSABILIDADE: Guardar os Dados (O Molde / Entidade)
+// A única função desta classe é existir e armazenar informações.
+// =====================================================================
+class Funcionario {
+    String nome;
+    double salario;
+
+    // O "Construtor" (prepara o funcionário quando ele é criado)
+    public Funcionario(String nome, double salario) {
+        this.nome = nome;
+        this.salario = salario;
+    }
+}
+
+// =====================================================================
+// 2. RESPONSABILIDADE: Regras de Negócio e Matemática
+// A única função desta classe é fazer cálculos. Se a lei do imposto
+// mudar amanhã, é SÓ AQUI que você vai precisar mexer.
+// =====================================================================
+class CalculadoraDeImposto {
+    
+    public double calcular(Funcionario funcionario) {
+        // Retorna 10% do salário do funcionário
+        return funcionario.salario * 0.10; 
+    }
+}
+
+// =====================================================================
+// 3. RESPONSABILIDADE: Conexão com o Banco de Dados (Repositório)
+// A única função desta classe é salvar coisas fora do sistema.
+// =====================================================================
+class FuncionarioRepository {
+    
+    public void salvar(Funcionario funcionario) {
+        // Aqui ficaria todo o código complexo de conectar na nuvem/banco.
+        // Para o nosso teste, vamos apenas imprimir uma mensagem de sucesso:
+        System.out.println("💾 Sucesso: Funcionário " + funcionario.nome + " salvo no banco de dados!");
+    }
+}
+
+// =====================================================================
+// 4. O MAESTRO: A classe principal que orquestra tudo (O Main)
+// Ele não faz contas nem salva nada sozinho. Ele apenas chama os 
+// especialistas na ordem correta para fazer o sistema funcionar.
+// =====================================================================
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("🚀 Iniciando o sistema da empresa...\n");
+
+        // Passo A: Criamos o funcionário (Usando o Especialista de Dados)
+        Funcionario ana = new Funcionario("Ana", 5000.0);
+        System.out.println("👤 Funcionário criado: " + ana.nome);
+
+        // Passo B: Calculamos o imposto (Usando o Especialista em Matemática)
+        CalculadoraDeImposto calculadora = new CalculadoraDeImposto();
+        double imposto = calculadora.calcular(ana);
+        System.out.println("💰 O imposto calculado para a Ana é: R$ " + imposto);
+
+        // Passo C: Salvamos no sistema (Usando o Especialista de Banco)
+        FuncionarioRepository banco = new FuncionarioRepository();
+        banco.salvar(ana);
+        
+        System.out.println("\n✅ Processo finalizado com sucesso!");
+    }
+}
