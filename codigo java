@@ -2,6 +2,7 @@
 // 1. RESPONSABILIDADE: Guardar os Dados (O Molde / Entidade)
 // A única função desta classe é existir e armazenar informações.
 // =====================================================================
+
 class Funcionario {
     String nome;
     double salario;
@@ -18,6 +19,8 @@ class Funcionario {
 // A única função desta classe é fazer cálculos. Se a lei do imposto
 // mudar amanhã, é SÓ AQUI que você vai precisar mexer.
 // =====================================================================
+
+
 class CalculadoraDeImposto {
     
     public double calcular(Funcionario funcionario) {
@@ -30,6 +33,7 @@ class CalculadoraDeImposto {
 // 3. RESPONSABILIDADE: Conexão com o Banco de Dados (Repositório)
 // A única função desta classe é salvar coisas fora do sistema.
 // =====================================================================
+
 class FuncionarioRepository {
     
     public void salvar(Funcionario funcionario) {
@@ -39,11 +43,14 @@ class FuncionarioRepository {
     }
 }
 
+
 // =====================================================================
 // 4. O MAESTRO: A classe principal que orquestra tudo (O Main)
 // Ele não faz contas nem salva nada sozinho. Ele apenas chama os 
 // especialistas na ordem correta para fazer o sistema funcionar.
 // =====================================================================
+
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("🚀 Iniciando o sistema da empresa...\n");
