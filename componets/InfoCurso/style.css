@@ -1,0 +1,65 @@
+/* =====================================================================
+   1. BLOCO DO CARTÃO DE INFORMAÇÕES (.info-curso)
+   O que pertence a este bloco: A <div className='info-curso'> inteira.
+   O que fazemos aqui: Criamos um "cartão" branco com cantos arredondados,
+   boa tipografia e, crucialmente, preparamos o terreno para o efeito de clique.
+===================================================================== */
+.info-curso {
+    background-color: #ffffff; /* Fundo limpo e branco */
+    border-radius: 12px; /* Cantos arredondados e suaves */
+    padding: 25px; /* "Enchimento" interno para o texto respirar */
+    width: 300px; /* Define uma largura padrão para o cartão */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra bem leve para dar profundidade */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte moderna e limpa */
+    
+    /* PREPARAÇÃO PARA O EFEITO VISUAL: */
+    transition: all 0.1s ease-in-out; /* Faz as mudanças de tamanho/sombra serem ultra rápidas e suaves */
+    cursor: pointer; /* Transforma o mouse na mãozinha de clique */
+    border: 1px solid transparent; /* Cria uma borda invisível para não dar pulos no clique */
+}
+
+/* =====================================================================
+   2. EFEITO DE HOVER (Quando o mouse PASSA por cima)
+   Apenas um pequeno feedback visual para mostrar que é clicável.
+===================================================================== */
+.info-curso:hover {
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.15); /* Sombra aumenta levemente e fica levemente azulada */
+    background-color: #fbfdff; /* O fundo clareia quase imperceptivelmente */
+}
+
+/* =====================================================================
+   3. BLOCO DO EFEITO DE CLIQUE (A Mágica do :active) <--- O MAIS IMPORTANTE
+   Esse bloco SÓ ativa enquanto o botão do mouse estiver pressionado!
+===================================================================== */
+.info-curso:active {
+    /* 1. O efeito de afundar: encolhemos levemente o cartão inteiro */
+    transform: scale(0.97); /* 0.97 significa 97% do tamanho original. Ele encolhe! */
+    
+    /* 2. O feedback visual da borda: muda para um azul forte */
+    border-color: #007bff; 
+    
+    /* 3. O brilho dourado de sucesso */
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.5); /* Sombra dourada suave explode ao redor */
+}
+
+/* =====================================================================
+   4. ESTILOS DO TÍTULO (<h2>)
+===================================================================== */
+.info-curso h2 {
+    color: #007bff; /* Azul forte e educacional */
+    margin-top: 0; /* Remove a margem superior padrão do navegador */
+    margin-bottom: 18px; /* Dá um espacinho para os dados de baixo */
+    font-size: 20px;
+    border-bottom: 2px solid #e6f2ff; /* Uma linha azul clarinha embaixo do título */
+    padding-bottom: 8px; /* Espaço entre o texto e a linha */
+}
+
+/* =====================================================================
+   5. ESTILOS DOS TEXTOS DE INFORMAÇÕES (Os <p>)
+===================================================================== */
+.info-curso p {
+    font-size: 16px;
+    color: #444444; /* Um cinza escuro, mais legível que preto puro */
+    margin: 10px 0; /* Espaçamento entre uma linha e outra */
+    text-transform: capitalize; /* Deixa a primeira letra de cada palavra em maiúsculo automaticamente (útil para o nome do curso) */
+}

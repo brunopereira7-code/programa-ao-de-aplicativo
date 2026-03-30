@@ -1,0 +1,54 @@
+/* =====================================================================
+   BLOCO DO CARTÃO MARVEL
+   Deixa o fundo escuro, a letra branca e coloca uma borda vermelha
+   com um leve brilho (neon).
+===================================================================== */
+.card-marvel {
+    background: linear-gradient(145deg, #1a1a1a, #0b0b0b); /* Fundo quase preto */
+    border: 2px solid #ed1d24; /* Vermelho Marvel */
+    border-radius: 12px;
+    width: 320px;
+    padding: 20px;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0px 4px 15px rgba(237, 29, 36, 0.3); /* Brilho vermelho suave */
+    
+    /* Prepara o cartão para fazer uma animação suave quando for clicado */
+    transition: all 0.2s ease-in-out; 
+    cursor: pointer; /* Muda o mouse para a "mãozinha" */
+}
+
+/* =====================================================================
+   O EFEITO DE CLIQUE (A Mágica do :active)
+   Esse bloco SÓ ativa enquanto o botão do mouse estiver pressionado!
+===================================================================== */
+.card-marvel:active {
+    transform: scale(0.92); /* O cartão "encolhe" dando a sensação de afundar */
+    box-shadow: 0px 0px 30px rgba(255, 184, 28, 0.8); /* O brilho explode e vira dourado */
+    border-color: #ffb81c; /* A borda vermelha vira dourada */
+}
+
+/* =====================================================================
+   ESTILOS DO TÍTULO E DOS TEXTOS
+===================================================================== */
+.card-header h2 {
+    color: white;
+    background-color: #ed1d24; /* Fundo vermelho no título */
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase; /* Deixa tudo em MAIÚSCULO */
+    letter-spacing: 2px; /* Afasta um pouco as letras no estilo cinema */
+}
+
+.card-body p {
+    font-size: 18px;
+    margin: 12px 0;
+    color: #e0e0e0; /* Um cinza bem clarinho para não cansar a vista */
+}
+
+/* Deixa apenas os rótulos (Codinome, Nível) na cor Dourada */
+.card-body strong {
+    color: #ffb81c; 
+}

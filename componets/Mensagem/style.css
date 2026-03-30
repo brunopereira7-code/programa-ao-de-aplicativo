@@ -1,0 +1,14 @@
+.mensagem h1{
+    color: aqua; 
+    margin: 10px 0;
+    height: auto; 
+    margin: 25px  auto;
+} 
+h1{
+    margin: 25px auto;
+} 
+.mensagem hr{
+    max-width: 50%;
+
+} 
+
