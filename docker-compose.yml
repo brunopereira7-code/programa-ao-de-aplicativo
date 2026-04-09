@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  app:
+    build: . # Constrói o Dockerfile local
+    ports:
+      - "3000:3000" # Mapeia porta host:container
+    volumes:
+      - .:/app # Sincroniza o código local com o contêiner (hot-reload)
+      - /app/node_modules # Evita sobrescrever módulos instalados no container
+    environment:
+      NODE_ENV: development
